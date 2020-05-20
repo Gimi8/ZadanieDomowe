@@ -32,43 +32,29 @@ public class Room  extends Main {
     }
 
 
-
-
-
-
-
-
     public double getWysokosc() {
         return wysokosc;
     }
 
-    public void setWysokosc(double wysokosc) {
-        this.wysokosc = wysokosc;
-    }
+
 
     public double getSzerokosc() {
         return szerokosc;
     }
 
-    public void setSzerokosc(double szerokosc) {
-        this.szerokosc = szerokosc;
-    }
+
 
     public double getDługosc() {
         return długosc;
     }
 
-    public void setDługosc(double długosc) {
-        this.długosc = długosc;
-    }
+
 
     public double getDługosć2() {
         return długosć2;
     }
 
-    public void setDługosć2(double długosć2) {
-        this.długosć2 = długosć2;
-    }
+
 }
 
 

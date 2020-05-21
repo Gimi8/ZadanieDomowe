@@ -6,9 +6,16 @@ public class Room  extends Main {
     double szerokosc;
     double długosc;
     double długosć2;
+    String nazwa;
 
 
-    public Room(double wysokosc, double szerokosc, double długosc, double długosć2) {
+
+
+
+
+
+    public Room(String nazwa,double wysokosc, double szerokosc, double długosc, double długosć2) {
+        this.nazwa = nazwa;
         this.wysokosc = wysokosc;
         this.szerokosc = szerokosc;
         this.długosc = długosc;
@@ -29,6 +36,12 @@ public class Room  extends Main {
     public void wyswietlenieObj(){
 
         System.out.printf("Objętość pokoju wyonosi = %.2f m3\n",objetosc());
+    }
+    public double malowanie(){
+        return ((((getDługosć2() + getDługosc()) *2) * getWysokosc()) / 10);
+    }
+    public void farba(){
+        System.out.printf("Aby pomalować ściany potrzeba %.2f  litrów farby",malowanie());
     }
 
 
@@ -54,7 +67,9 @@ public class Room  extends Main {
         return długosć2;
     }
 
-
+    public String getNazwa() {
+        return nazwa;
+    }
 }
 
 
